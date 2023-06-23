@@ -27,7 +27,7 @@ export default function Home() {
   const depositUSDC = async () => {
     try {
       const {data} = await axios.post('/api/depositusdc')
-      console.log("deposit USDC", data)
+      console.log("deposit 5 USDC", data)
       setWallet(data)
     } catch (error) {
       console.log("error", error)
@@ -59,7 +59,7 @@ export default function Home() {
         }
       
     <button className='bg-green-400 px-2 py-2 rounded-md text-black my-8 font-bold text-xl' onClick={() => depositUSDC()}>
-     Deposit $USDC
+     Deposit 5$USDC
     </button>
     </main>
   )
